@@ -148,7 +148,6 @@ namespace _8
                 book.Publisher = cbPublisher.Text;
             }
 
-
             if (string.IsNullOrEmpty(tbPageCount.Text))
             {
                 MessageBox.Show("Поле 'PageCount' пустое. Выберите PageCount", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
@@ -187,28 +186,10 @@ namespace _8
             else
             {
                 book.PublishYear = int.Parse(tbPublishYear.Text);
-
-                //if (int.TryParse(tbPublishYear.Text, out int age))
-                //{
-                //    DateTime currentDate = DateTime.Now;
-
-                //    int year = currentDate.Year - age;
-
-                //    dpBDay.SelectedDate = new DateTime(year, currentDate.Month, currentDate.Day);
-
-                //    dpBDay.DisplayDateStart = new DateTime(year, 1, 1);
-                //    dpBDay.DisplayDateEnd = new DateTime(year, 12, 31);
-                //}
-                //else
-                //{
-                //    dpBDay.SelectedDate = null;
-                //    dpBDay.DisplayDateStart = null;
-                //    dpBDay.DisplayDateEnd = null;
-                //}
             }
 
             CultureInfo culture = CultureInfo.InvariantCulture;
-            decimal averageScore;
+            decimal fileSize;
             if (string.IsNullOrEmpty(tbFileSize.Text))
             {
                 MessageBox.Show("Поле 'FileSize' пустое.  Введите FileSize", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
@@ -221,8 +202,8 @@ namespace _8
             }
             else
             {
-                if(decimal.TryParse(tbFileSize.Text, NumberStyles.Number, culture, out averageScore))
-                book.FileSize = averageScore;
+                if(decimal.TryParse(tbFileSize.Text, NumberStyles.Number, culture, out fileSize))
+                book.FileSize = fileSize;
             }
 
             string bDay = dpUploadDate.SelectedDate.ToString();

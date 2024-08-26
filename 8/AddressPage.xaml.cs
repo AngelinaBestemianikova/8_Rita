@@ -54,7 +54,7 @@ namespace _8
                 return;
             }
 
-            Author address = new Author
+            Author author = new Author
             {
                 AuthorID = int.Parse(tbAuthorID.Text),
                 City = tbCity.Text,
@@ -70,7 +70,7 @@ namespace _8
                 return;
             }
 
-            _book.Author = address;
+            _book.Author = author;
             _book.UpdatedAt = DateTime.Now;
 
             AppData.db.Book.AddOrUpdate(_book);

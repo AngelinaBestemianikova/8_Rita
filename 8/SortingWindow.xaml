@@ -7,18 +7,18 @@
         mc:Ignorable="d"
         Title="SortingWindow" Height="450" Width="400">
     <Grid Background="AliceBlue">
-        <TextBlock HorizontalAlignment="Left" Margin="50,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Сортировать по Student ID"></TextBlock>
-        <RadioButton x:Name="rbAsID" Content="по возрастанию" HorizontalAlignment="Left" Margin="50,51,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="rbDeID" Content="по убыванию" HorizontalAlignment="Left" Margin="50,71,0,0" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="50,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Сортировать по Group"/>
-        <RadioButton x:Name="rbAsGroup" Content="по возрастанию" HorizontalAlignment="Left" Margin="50,144,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="rbDeGroup" Content="по убыванию" HorizontalAlignment="Left" Margin="50,164,0,0" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="57,213,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Сортировать по Course"/>
-        <RadioButton x:Name="rbAsCourse" Content="по возрастанию" HorizontalAlignment="Left" Margin="57,242,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="rbDeCourse" Content="по убыванию" HorizontalAlignment="Left" Margin="57,262,0,0" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="57,307,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Сортировать по Age"/>
-        <RadioButton x:Name="rbAsAge" Content="по возрастанию" HorizontalAlignment="Left" Margin="57,336,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="rbDeAge" Content="по убыванию" HorizontalAlignment="Left" Margin="57,356,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="50,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Сортировать по UDC"></TextBlock>
+        <RadioButton x:Name="rbAsUDC" Content="по возрастанию" HorizontalAlignment="Left" Margin="50,51,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rbDeUDC" Content="по убыванию" HorizontalAlignment="Left" Margin="50,71,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="50,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Сортировать по Publish Year"/>
+        <RadioButton x:Name="rbAsYear" Content="по возрастанию" HorizontalAlignment="Left" Margin="50,144,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rbDeYear" Content="по убыванию" HorizontalAlignment="Left" Margin="50,164,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="57,213,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Сортировать по File Size"/>
+        <RadioButton x:Name="rbAsSize" Content="по возрастанию" HorizontalAlignment="Left" Margin="57,242,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rbDeSize" Content="по убыванию" HorizontalAlignment="Left" Margin="57,262,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="57,307,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Сортировать по Page Count"/>
+        <RadioButton x:Name="rbAsCount" Content="по возрастанию" HorizontalAlignment="Left" Margin="57,336,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rbDeCount" Content="по убыванию" HorizontalAlignment="Left" Margin="57,356,0,0" VerticalAlignment="Top"/>
         <Button x:Name="Sorting_btn" Content="Sorting" HorizontalAlignment="Left" Margin="266,343,0,0" VerticalAlignment="Top" Padding="10,5" Click="Sorting_btn_Click"/>
     </Grid>
 </Window>

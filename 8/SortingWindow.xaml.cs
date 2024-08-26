@@ -24,51 +24,51 @@ namespace _8
             InitializeComponent();
         }
 
-        public bool GroupAscending { get; set; }
-        public bool GroupDescending { get; set; }
-        public bool CourseAscending { get; set; }
-        public bool CourseDescending { get; set; }
-        public bool AgeAscending { get; set; }
-        public bool AgeDescending { get; set; }
-        public bool IDAscending { get; set; }
-        public bool IDDescending { get; set; }
+        public bool PublishYearAscending { get; set; }
+        public bool PublishYearDescending { get; set; }
+        public bool FileSizeAscending { get; set; }
+        public bool FileSizeDescending { get; set; }
+        public bool PageCountAscending { get; set; }
+        public bool PageCountDescending { get; set; }
+        public bool UDCAscending { get; set; }
+        public bool UDCDescending { get; set; }
 
         private void Sorting_btn_Click(object sender, RoutedEventArgs e)
         {
-            if ((bool)rbAsCourse.IsChecked)
+            if ((bool)rbAsSize.IsChecked)
             {
-                CourseAscending = true;
+                FileSizeAscending = true;
             }
-            else if ((bool)rbDeCourse.IsChecked)
+            else if ((bool)rbDeSize.IsChecked)
             {
-                CourseDescending = true;
-            }
-
-            if ((bool)rbAsGroup.IsChecked)
-            {
-                GroupAscending = true;
-            }
-            else if ((bool)rbDeGroup.IsChecked)
-            {
-                GroupDescending = true;
+                FileSizeDescending = true;
             }
 
-            if ((bool)rbAsAge.IsChecked)
+            if ((bool)rbAsYear.IsChecked)
             {
-                AgeAscending = true;
+                PublishYearAscending = true;
             }
-            else if((bool)rbDeAge.IsChecked)
+            else if ((bool)rbDeYear.IsChecked)
             {
-                AgeDescending = true;
+                PublishYearDescending = true;
             }
 
-            if ((bool)rbAsID.IsChecked)
+            if ((bool)rbAsCount.IsChecked)
             {
-                IDAscending = true;
+                PageCountAscending = true;
             }
-            else if ((bool)rbDeID.IsChecked)
+            else if((bool)rbDeCount.IsChecked)
             {
-                IDDescending = true;
+                PageCountDescending = true;
+            }
+
+            if ((bool)rbAsUDC.IsChecked)
+            {
+                UDCAscending = true;
+            }
+            else if ((bool)rbDeUDC.IsChecked)
+            {
+                UDCDescending = true;
             }
             Close();
         }

@@ -119,9 +119,14 @@ namespace _8
             {
                 if (decimal.TryParse(tbFileSize.Text, NumberStyles.Number, culture, out fileSize))
                     book.FileSize = fileSize;
+                else
+                {
+                    MessageBox.Show("Ошибка при парсинге значения FileSize", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
             }
 
-            if(dpUploadDate.SelectedDate is null)
+            if (dpUploadDate.SelectedDate is null)
             {
                 MessageBox.Show("Дата рождения не может быть пустой!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error); 
                 return;
