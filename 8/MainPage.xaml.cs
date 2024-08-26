@@ -21,7 +21,7 @@ namespace _8
         {
             InitializeComponent();
 
-            Create();
+            //Create();
         }
 
         private void Add_Btn_Click(object sender, RoutedEventArgs e)
@@ -368,7 +368,7 @@ namespace _8
 	                    [UploadDate] [date] NULL,
 	                    [PublishYear] [int] NULL,
 	                    [Format] [varchar](50) NULL,
-	                    [FileSize] [decimal](3, 2) NULL,
+	                    [FileSize] [decimal](5, 2) NULL,
 	                    [ListOfAuthors] [varchar](500) NULL,
 	                    [AuthorID] [int] NOT NULL,
 	                    [UpdatedAt] [datetime] NULL,
@@ -406,7 +406,7 @@ namespace _8
                         @UploadDate Date,
                         @PublishYear INT,
                         @Format varchar(50),
-                        @FileSize decimal(3, 2),
+                        @FileSize decimal(5, 2),
                         @City varchar(50),
                         @Country varchar(50),
                         @FIO varchar(100),   

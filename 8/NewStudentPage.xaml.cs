@@ -80,7 +80,7 @@ namespace _8
 
             if (string.IsNullOrEmpty(cbFormat.Text))
             {
-                MessageBox.Show("Поле 'Group' пустое. Выберите Group", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Поле 'Формат' пустое. Выберите Group", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
             else
@@ -128,7 +128,7 @@ namespace _8
 
             if (dpUploadDate.SelectedDate is null)
             {
-                MessageBox.Show("Дата рождения не может быть пустой!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error); 
+                MessageBox.Show("Дата публикации не может быть пустой!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error); 
                 return;
             }
             string bDay = dpUploadDate.SelectedDate.ToString();
@@ -136,7 +136,7 @@ namespace _8
 
             if (DateTime.Parse(bDay) > currentDateTime)
             {
-                MessageBox.Show("Дата рождения не может быть в будущем!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error); 
+                MessageBox.Show("Дата публикации не может быть в будущем!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error); 
                 return;
             }
             else
@@ -157,7 +157,7 @@ namespace _8
 
             if (image.Source == null)
             {
-                MessageBox.Show("Добавьте фото студента!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Добавьте фото книги!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
 

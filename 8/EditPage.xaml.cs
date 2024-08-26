@@ -178,9 +178,9 @@ namespace _8
                 MessageBox.Show("Поле 'PublishYear' должно содеражать только цифры", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
-            if (int.Parse(tbPublishYear.Text) >100 || int.Parse(tbPublishYear.Text) < 18)
+            if (int.Parse(tbPublishYear.Text) >2024 || int.Parse(tbPublishYear.Text) < 1500)
             {
-                MessageBox.Show("Введите PublishYear от 18 до 100", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Введите PublishYear от 1500 до 2024", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
             else
